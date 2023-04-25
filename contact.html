@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="https://getform.io/f/ce8a5a2a-f67c-4751-b4b2-665264175139" method="POST">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label for="">
+            Name: <br>
+            <input type="text" name="name">
+            </label><br><br>
+            <label for=""> 
+            Email: <br>     
+            <input type="email" name="email">
+            </label><br><br>
+            <label for="">
+            Contact No: <br>
+            <input type="tel" name="contact">
+            </label><br><br>
+            <!-- checkbox handle -->
+            <label for="">
+                Are you a registered user?   Yes 
+                <input type="checkbox" name="Registered" value="yes" checked>
+                <input type="hidden" name="Registered" value="no"><br><br>
+            </label>
+            <!-- radio button handle -->
+            <label  for="">
+                Gender: <br><br>
+                <input class="gender" type="radio" name="gender" value="male" checked>Male
+                <input class="gender" type="radio" name="gender" value="female">Female
+                <input class="gender" type="radio" name="gender" value="other">Others<br>
+            </label>
+            <!-- Address -->
+            <br><br>
+                <label  for="">
+                    Address: <br>
+                    <input class="Address" type="Text" name="Landmark" value="Landmark" placeholder="Landmark"><br>
+                    <input class="Address" type="text" name="city" value="city" placeholder="City" ><br>
+                    <input class="Address" type="Text" name="State" value="State" placeholder="State"><br>
+                    <input class="Address" type="number" name="Pincode" value="Pincode" placeholder="Pincode"><br><br>
+                </label>
+            <!-- text area -->
+            <label for="">
+
+                Messege: <br>
+                <textarea name="messege" id="messege" cols="30" rows="3" placeholder="Want to say something?"></textarea>
+                <br>
+                <br>
+                <button type="submit" class="btn" align="center">Send</button>
+            </label>
+        </fieldset>
+    </form>
+   
+</body>
+
+</html>

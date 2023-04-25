@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  /* box-sizing:border-box; */
+  font-family: "Poppins", sans-serif;
+}
+fieldset{
+  border: solid #fff ;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+div nav ul li {
+  list-style: none;
+  display: inline;
+
+}
+
+div nav ul li a:hover{
+  color: solid red;
+}
+legend{
+    font-size: large;
+    font-weight:700;
+    margin: 25px;
+    padding: 12px;
+}
+
+.gender{
+  padding: 0px;
+ 
+}
+button{
+  float: left;
+  margin: 0px 0px 25px 25px ;
+}
+
+input{
+  align-items: center;
+  /* padding: 50px; */
+  margin: 0px 25px ;
+}
+textarea{
+  margin-left: 25px;
+  align-items: center;
+}
+label{
+  margin: 25px 25px 25px 25px ;
+  
+}
+
+body{
+  min-height: 100vh;
+  background-image: url(../img/bg2.jpg);
+  /* background-image: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80); */
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 950px){
+  .contact-section{
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form{
+    margin: 30px 50px;
+  }
+
+  .contact-form h2{
+    font-size: 30px;
+  }
+
+  .contact-form .text-box{
+    width: 100%;
+  }
+}
+
+/*css for alert messages*/
+
+.alert-success{
+  z-index: 1;
+  background: #D4EDDA;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #3AD66E;
+  border-radius: 4px;
+}
+
+.alert-error{
+  z-index: 1;
+  background: #FFF3CD;
+  font-size: 18px;
+  padding: 20px 40px;
+  min-width: 420px;
+  position: fixed;
+  right: 0;
+  top: 10px;
+  border-left: 8px solid #FFA502;
+  border-radius: 4px;
+}
